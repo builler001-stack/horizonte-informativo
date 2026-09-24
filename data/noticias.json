@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "titulo": "El agua que no llega: seis meses de racionamiento en la sabana",
+    "resumen": "Los embalses cayeron al 31% de su capacidad y once municipios entraron en turnos de suministro. La reconstrucción de la red tomará, según el operador, al menos dos años.",
+    "categoria": "Economía",
+    "autor": "Valeria Restrepo",
+    "fecha": "2026-09-14",
+    "lecturaMin": 12,
+    "imagen": "img/placeholder.svg",
+    "pieFoto": "Tanques comunitarios en el barrio San Isidro, donde el agua llega tres días por semana.",
+    "destacada": true,
+    "cuerpo": [
+      "El primer aviso llegó un martes de marzo, en un comunicado de cuatro párrafos: el sistema entraba en \"operación restringida\". Nadie usó la palabra racionamiento hasta la tarde siguiente, cuando los turnos ya estaban impresos en un mapa de nueve colores que la ciudad aprendió de memoria en una semana.",
+      "Seis meses después, el 31% de capacidad que reportan los embalses es apenas un punto mejor que en abril. La lluvia volvió tarde y corta. El operador sostiene que el sistema resistió porque el consumo bajó un 14%; los técnicos consultados por este diario atribuyen la mitad de esa caída a las fugas que se repararon, no al ahorro doméstico.",
+      "La red que abastece a la sabana se diseñó para 1,2 millones de personas y hoy sirve a 2,9 millones. Tres de sus cuatro plantas superan los cuarenta años. El plan de reposición existe desde 2019 y lleva ejecutado un 22%, según la respuesta oficial a un derecho de petición de esta redacción.",
+      "En San Isidro, el barrio donde el agua llega tres días por semana, las familias organizaron un turno propio: los tanques comunitarios se llenan de madrugada y se reparten por escalera. Es un sistema informal, gratuito y frágil, y ha funcionado sin interrupción durante veintitrés semanas."
+    ],
+    "cita": { "texto": "Cada mes que pasa sin obra nueva nos cuesta un mes más de turnos.", "autor": "Hernán Duque, ingeniero del acueducto regional" },
+    "cifras": [
+      { "valor": "31%", "texto": "de capacidad en los embalses" },
+      { "valor": "11", "texto": "municipios con turnos activos" },
+      { "valor": "22%", "texto": "del plan de reposición ejecutado" }
+    ]
+  },
+  {
+    "id": 2,
+    "titulo": "El salario mínimo se negocia con la inflación más baja en cuatro años",
+    "resumen": "Las centrales piden un ajuste de dos dígitos y los gremios ofrecen la mitad. La mesa se instala el jueves con plazo hasta el 30 de diciembre.",
+    "categoria": "Economía",
+    "autor": "Andrés Lozano",
+    "fecha": "2026-09-14",
+    "lecturaMin": 5,
+    "imagen": "img/placeholder.svg",
+    "destacada": true,
+    "cuerpo": ["Las centrales piden un ajuste de dos dígitos; los gremios ofrecen la mitad. La mesa se instala el jueves y tiene plazo hasta el 30 de diciembre."]
+  },
+  {
+    "id": 3,
+    "titulo": "El consejo aprueba la tarifa de emergencia por seis meses más",
+    "resumen": "La votación fue de 28 a 11. El subsidio cubre a los estratos 1 y 2, y deja fuera a los comercios que consumen más de 40 metros cúbicos.",
+    "categoria": "Política",
+    "autor": "Marcela Ruiz",
+    "fecha": "2026-09-14",
+    "lecturaMin": 4,
+    "imagen": "img/placeholder.svg",
+    "destacada": false,
+    "cuerpo": ["La votación fue de 28 a 11. El subsidio cubre a los estratos 1 y 2, y deja fuera a los comercios que consumen más de 40 metros cúbicos."]
+  },
+  {
+    "id": 4,
+    "titulo": "La cumbre climática cierra sin acuerdo sobre el fondo de pérdidas",
+    "resumen": "Cuarenta y ocho horas de prórroga no bastaron. El texto final menciona el fondo, pero no fija cifras ni fecha de arranque.",
+    "categoria": "Mundo",
+    "autor": "Agencias",
+    "fecha": "2026-09-13",
+    "lecturaMin": 6,
+    "imagen": "img/placeholder.svg",
+    "destacada": false,
+    "cuerpo": ["Cuarenta y ocho horas de prórroga no bastaron. El texto final menciona el fondo, pero no fija cifras ni fecha de arranque."]
+  },
+  {
+    "id": 5,
+    "titulo": "La feria del libro cambia de sede y duplica su programación infantil",
+    "resumen": "Once días, 340 editoriales y una sala dedicada a la traducción. La invitada de honor llega del Caribe por primera vez.",
+    "categoria": "Cultura",
+    "autor": "Julia Paredes",
+    "fecha": "2026-09-13",
+    "lecturaMin": 4,
+    "imagen": "img/placeholder.svg",
+    "destacada": true,
+    "cuerpo": ["Serán once días, 340 editoriales y una sala dedicada a la traducción. La invitada de honor llega del Caribe por primera vez en la historia del certamen."]
+  },
+  {
+    "id": 6,
+    "titulo": "Ascenso en la última fecha: el gol que devolvió a un pueblo a primera",
+    "resumen": "Después de nueve temporadas el estadio municipal vuelve a llenarse. La crónica desde el vestuario y las cuentas de un club sin patrocinador.",
+    "categoria": "Deportes",
+    "autor": "Iván Cortés",
+    "fecha": "2026-09-13",
+    "lecturaMin": 7,
+    "imagen": "img/placeholder.svg",
+    "destacada": true,
+    "cuerpo": ["Después de nueve temporadas, el estadio municipal vuelve a llenarse. La crónica desde el vestuario y las cuentas del club, que sigue sin patrocinador."]
+  },
+  {
+    "id": 7,
+    "titulo": "Tres rutas nuevas de bus y una que desaparece desde el lunes",
+    "resumen": "El cambio afecta a 62.000 pasajeros diarios. El operador promete frecuencias de siete minutos en hora pico durante el primer mes.",
+    "categoria": "Ciudad",
+    "autor": "Valeria Restrepo",
+    "fecha": "2026-09-12",
+    "lecturaMin": 3,
+    "imagen": "img/placeholder.svg",
+    "destacada": false,
+    "cuerpo": ["El cambio afecta a 62.000 pasajeros diarios. El operador promete frecuencias de siete minutos en hora pico durante el primer mes."]
+  },
+  {
+    "id": 8,
+    "titulo": "Veinte años de obras aplazadas, contados en una factura",
+    "resumen": "Racionar el agua no es una política: es la factura de veinte años sin obras.",
+    "categoria": "Opinión",
+    "autor": "Editorial",
+    "fecha": "2026-09-14",
+    "lecturaMin": 4,
+    "imagen": "img/placeholder.svg",
+    "destacada": false,
+    "cuerpo": ["Racionar el agua no es una política: es la factura de veinte años sin obras."]
+  }
+]

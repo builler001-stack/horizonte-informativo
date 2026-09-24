@@ -1,0 +1,118 @@
+/* =========================================================
+   Horizonte Informativo — Estilos globales (compartidos)
+   Responsable: Builler. Si necesitas un color o fuente nueva,
+   agrégala aquí como variable y avisa al grupo.
+   Cada página puede agregar sus estilos al final, en la
+   sección marcada con su nombre, para no pisarse entre todos.
+   ========================================================= */
+
+/* ---------- 1. Variables (paleta y tipografía del Figma) ---------- */
+:root {
+  --tinta: #222222;          /* texto principal */
+  --tinta-suave: #5f5f5f;    /* bajadas, metadatos */
+  --papel: #ffffff;          /* fondo */
+  --gris-claro: #eceae6;     /* campos, placeholders */
+  --linea: #d8d8d8;          /* bordes finos */
+  --azul: #0e7fa6;           /* botones y enlaces (Suscribirse, Enviar) */
+  --azul-oscuro: #0a6283;
+  --categoria: #1f6f8b;      /* etiqueta de sección en tarjetas */
+  --magenta: #c2185b;        /* "Informe especial", marcas de pantalla */
+  --error: #b3261e;
+  --exito: #2e7d32;
+
+  --fuente: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --ancho-max: 1100px;
+  --radio: 3px;
+}
+
+/* ---------- 2. Base ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: var(--fuente);
+  color: var(--tinta);
+  background: var(--papel);
+  line-height: 1.6;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+a:hover { color: var(--azul); }
+:focus-visible { outline: 3px solid var(--azul); outline-offset: 2px; }
+.contenedor { max-width: var(--ancho-max); margin: 0 auto; padding: 0 20px; }
+main { min-height: 60vh; padding: 32px 0 48px; }
+
+/* ---------- 3. Header (lo inserta js/componentes.js) ---------- */
+.header { border-bottom: 1px solid var(--tinta); padding-top: 16px; }
+.header__meta {
+  display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+  font-size: .78rem; letter-spacing: .06em; color: var(--tinta-suave); text-transform: uppercase;
+}
+.header__marca {
+  display: block; text-decoration: none; font-weight: 700;
+  font-size: clamp(2rem, 6vw, 3.2rem); line-height: 1.1; margin: 8px 0 12px;
+  border-bottom: 4px double var(--tinta); padding-bottom: 12px;
+}
+.header__marca:hover { color: var(--tinta); }
+.nav { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 6px 0 14px; }
+.nav__lista { display: flex; flex-wrap: wrap; gap: 6px 22px; list-style: none; margin: 0; padding: 0; }
+.nav__lista a { text-decoration: none; font-size: .85rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; }
+.nav__lista a[aria-current="page"] { color: var(--azul); }
+.nav__acciones { display: flex; gap: 8px; }
+.nav__secundaria { display: flex; gap: 18px; font-size: .85rem; padding-bottom: 10px; }
+.nav__secundaria a { color: var(--tinta-suave); }
+.menu-btn { display: none; }
+
+/* ---------- 4. Botones y formularios ---------- */
+.btn {
+  display: inline-block; border: 1px solid var(--azul); background: var(--azul); color: #fff;
+  font: 600 .9rem var(--fuente); padding: 8px 16px; border-radius: var(--radio);
+  cursor: pointer; text-decoration: none;
+}
+.btn:hover { background: var(--azul-oscuro); color: #fff; }
+.btn--borde { background: transparent; color: var(--azul); }
+.btn--borde:hover { background: var(--azul); color: #fff; }
+.campo {
+  width: 100%; font: 1rem var(--fuente); padding: 8px 10px;
+  background: var(--gris-claro); border: 1px solid var(--linea); border-radius: var(--radio);
+}
+.campo--error { border-color: var(--error); }
+.mensaje-error { color: var(--error); font-size: .85rem; }
+.mensaje-exito { color: var(--exito); font-weight: 600; }
+
+/* ---------- 5. Piezas reutilizables ---------- */
+.categoria { color: var(--categoria); font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.meta { color: var(--tinta-suave); font-size: .8rem; letter-spacing: .04em; text-transform: uppercase; }
+.bajada { color: var(--tinta-suave); font-size: 1.1rem; }
+
+/* Tarjeta de noticia: imagen, categoría, título (enlace "ver más"), resumen, autor */
+.tarjeta { display: grid; grid-template-columns: minmax(160px, 40%) 1fr; gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--linea); }
+.tarjeta img { aspect-ratio: 3 / 2; object-fit: cover; width: 100%; }
+.tarjeta h3 { margin: 4px 0 8px; font-size: 1.35rem; line-height: 1.25; }
+.tarjeta h3 a { text-decoration: none; }
+.tarjeta p { margin: 0 0 8px; }
+
+.en-construccion { border: 1px dashed var(--linea); padding: 24px; color: var(--tinta-suave); }
+
+/* ---------- 6. Footer ---------- */
+.footer { border-top: 4px double var(--tinta); padding: 24px 0; font-size: .9rem; color: var(--tinta-suave); }
+.footer__marca { font-weight: 700; font-size: 1.3rem; color: var(--tinta); margin: 0 0 6px; }
+
+/* ---------- 7. Responsive: menú hamburguesa en móvil ---------- */
+@media (max-width: 720px) {
+  .menu-btn { display: inline-block; }
+  .nav__lista { display: none; width: 100%; flex-direction: column; }
+  .nav__lista.abierto { display: flex; }
+  .tarjeta { grid-template-columns: 1fr; }
+}
+
+/* =========================================================
+   Estilos por página — cada responsable escribe SOLO en su bloque
+   ========================================================= */
+
+/* --- Home (Estefanía) --- */
+
+/* --- Listado (Nicolás) --- */
+
+/* --- Detalle y favoritos (Andrés) --- */
+
+/* --- Contacto y administrar (Pedro) --- */
