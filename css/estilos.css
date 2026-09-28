@@ -39,7 +39,7 @@ a { color: inherit; }
 a:hover { color: var(--azul); }
 :focus-visible { outline: 3px solid var(--azul); outline-offset: 2px; }
 .contenedor { max-width: var(--ancho-max); margin: 0 auto; padding: 0 20px; }
-main { min-height: 60vh; padding: 32px 0 48px; }
+main.contenedor { min-height: 60vh; padding-top: 32px; padding-bottom: 56px; }
 
 /* ---------- 3. Header (lo inserta js/componentes.js) ---------- */
 .header { border-bottom: 1px solid var(--tinta); padding-top: 16px; }
@@ -60,7 +60,7 @@ main { min-height: 60vh; padding: 32px 0 48px; }
 .nav__acciones { display: flex; gap: 8px; }
 .nav__secundaria { display: flex; gap: 18px; font-size: .85rem; padding-bottom: 10px; }
 .nav__secundaria a { color: var(--tinta-suave); }
-.menu-btn { display: none; }
+.nav .menu-btn { display: none; }
 
 /* ---------- 4. Botones y formularios ---------- */
 .btn {
@@ -99,20 +99,104 @@ main { min-height: 60vh; padding: 32px 0 48px; }
 
 /* ---------- 7. Responsive: menú hamburguesa en móvil ---------- */
 @media (max-width: 720px) {
-  .menu-btn { display: inline-block; }
+  .nav .menu-btn { display: inline-block; }
   .nav__lista { display: none; width: 100%; flex-direction: column; }
   .nav__lista.abierto { display: flex; }
   .tarjeta { grid-template-columns: 1fr; }
 }
 
+/* ---------- 8. Piezas comunes de las páginas ---------- */
+.solo-lectores { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.rotulo { font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--tinta-suave); font-weight: 600; margin: 0 0 10px; }
+.rotulo--magenta { color: var(--magenta); font-weight: 700; }
+.titular { font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.15; margin: 0 0 14px; }
+.titular a { text-decoration: none; }
+.foto { margin: 24px 0; }
+.foto img { width: 100%; object-fit: cover; background: var(--gris-claro); }
+.foto--16-9 { aspect-ratio: 16 / 9; }
+.foto--2-1 { aspect-ratio: 2 / 1; }
+.foto figcaption { font-size: .85rem; color: var(--tinta-suave); margin-top: 6px; }
+.cita-destacada { margin: 28px 0; padding: 0; border: 0; }
+.cita-destacada p { font-style: italic; font-size: 1.5rem; line-height: 1.35; margin: 0 0 8px; }
+.cita-destacada footer { font-size: .85rem; color: var(--tinta-suave); }
+.grid-secciones { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
+.tarjeta-compacta h3 { font-size: 1.25rem; line-height: 1.25; margin: 4px 0 8px; }
+.tarjeta-compacta h3 a { text-decoration: none; }
+.tarjeta-compacta p { margin: 0 0 8px; font-size: .95rem; }
+.enlace-mas { color: var(--azul); font-weight: 600; font-size: .9rem; text-decoration: none; }
+.vacio { padding: 32px 0; color: var(--tinta-suave); }
+.nota { font-size: .85rem; color: var(--tinta-suave); }
+.btn--peque { padding: 5px 12px; font-size: .82rem; }
+.btn:disabled { opacity: .4; cursor: default; }
+
+/* Formularios */
+.formulario { display: grid; gap: 4px; }
+.formulario > .btn { justify-self: start; }
+.grupo { margin-bottom: 10px; border: 0; padding: 0; }
+.grupo label, .grupo legend { display: block; font-size: .85rem; color: var(--tinta-suave); margin-bottom: 4px; }
+.fila-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.mensaje-error:empty { display: none; }
+.segmentado label { display: inline-block; margin: 0 -1px 0 0; }
+.segmentado input { position: absolute; opacity: 0; }
+.segmentado span { display: inline-block; padding: 6px 14px; border: 1px solid var(--linea); cursor: pointer; color: var(--tinta); font-size: .9rem; }
+.segmentado input:checked + span { background: var(--azul); border-color: var(--azul); color: #fff; }
+.segmentado input:focus-visible + span { outline: 3px solid var(--azul); outline-offset: 2px; }
+.check { display: flex; gap: 8px; align-items: center; margin: 4px 0 12px; font-size: .95rem; }
+textarea.campo { resize: vertical; }
+
 /* =========================================================
-   Estilos por página — cada responsable escribe SOLO en su bloque
+   Estilos por página
    ========================================================= */
 
-/* --- Home (Estefanía) --- */
+/* --- Home (Pantalla 01) --- */
+.home-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 40px; }
+.home-lateral { border-left: 1px solid var(--linea); padding-left: 28px; }
+.ranking { list-style: none; counter-reset: rk; padding: 0; margin: 0 0 12px; }
+.ranking li { counter-increment: rk; display: grid; grid-template-columns: 24px 1fr; padding: 8px 0; font-weight: 600; line-height: 1.3; }
+.ranking li::before { content: counter(rk); color: var(--azul); }
+.ranking a { text-decoration: none; }
+.boletin__form { display: flex; gap: 8px; }
+.home-secciones { border-top: 1px solid var(--tinta); margin-top: 24px; padding-top: 18px; }
+.acciones-centro { display: flex; gap: 12px; justify-content: center; margin-top: 28px; flex-wrap: wrap; }
 
-/* --- Listado (Nicolás) --- */
+/* --- Listado (Pantalla 02) --- */
+.barra-filtros { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin: 16px 0 8px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { font: .8rem var(--fuente); border: 1px solid var(--categoria); color: var(--categoria); background: #fff; padding: 3px 10px; border-radius: var(--radio); cursor: pointer; }
+.chip[aria-pressed="true"] { background: #e3f1f6; font-weight: 700; }
+.orden { font-size: .9rem; color: var(--tinta-suave); }
+.campo--corto { width: auto; padding: 4px 8px; font-size: .9rem; }
+.paginacion { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 24px; }
+.pag { font: 600 .9rem var(--fuente); border: 1px solid var(--linea); background: #fff; color: var(--azul); padding: 6px 12px; cursor: pointer; }
+.pag[aria-current="page"] { background: var(--azul); color: #fff; border-color: var(--azul); }
 
-/* --- Detalle y favoritos (Andrés) --- */
+/* --- Detalle y favoritos (Pantalla 03) --- */
+.migas { font-size: .8rem; letter-spacing: .05em; text-transform: uppercase; color: var(--tinta-suave); margin-bottom: 14px; }
+.migas a { text-decoration: none; }
+.detalle-meta { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.detalle-cuerpo { display: grid; grid-template-columns: 2fr 1fr; gap: 40px; }
+.detalle-cuerpo--solo { grid-template-columns: minmax(0, 720px); }
+.texto p { margin: 0 0 18px; font-size: 1.05rem; }
+.cifra { font-size: 2rem; margin: 10px 0 0; line-height: 1.1; }
+.cifra--azul { color: var(--azul); }
+.cifra__texto { margin: 0; font-size: .9rem; color: var(--tinta-suave); }
+.relacionadas { border-top: 1px solid var(--linea); margin-top: 32px; padding-top: 18px; }
+.favorito { border-bottom: 1px solid var(--linea); padding-bottom: 14px; }
+.favorito .tarjeta { border-bottom: 0; }
 
-/* --- Contacto y administrar (Pedro) --- */
+/* --- Contacto y administrar (Pantalla 04) --- */
+.contacto-grid, .admin-grid { display: grid; grid-template-columns: 3fr 2fr; gap: 48px; margin-top: 24px; }
+.contacto-info p { margin: 0 0 20px; }
+.mapa { aspect-ratio: 4 / 3; object-fit: cover; width: 100%; border: 1px dashed var(--linea); }
+.admin-grid { grid-template-columns: 1fr 1fr; }
+.admin-cabecera { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.fila-admin { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--linea); }
+.fila-admin__titulo { margin: 2px 0; font-weight: 600; line-height: 1.3; }
+.fila-admin__titulo a { text-decoration: none; }
+.fila-admin .meta { margin: 0; }
+
+/* --- Ajustes móviles de las páginas --- */
+@media (max-width: 720px) {
+  .home-grid, .detalle-cuerpo, .contacto-grid, .admin-grid, .fila-2 { grid-template-columns: 1fr; }
+  .home-lateral { border-left: 0; padding-left: 0; }
+}

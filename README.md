@@ -15,7 +15,7 @@ Tutor: John Olarte Ramos.
 | Andres Felipe Bernal Rodriguez | Detalle (Pantalla 03) y favoritos | `detalle.html`, `js/detalle.js`, `favoritos.html`, `js/favoritos.js` |
 | Pedro Armando Vallejo Varon | Contacto (Pantalla 04) y mini CRUD | `contacto.html`, `js/contacto.js`, `admin.html`, `js/admin.js` |
 
-Cada archivo `.js` tiene al inicio una lista **TODO** con lo que falta.
+Cada archivo `.js` tiene al inicio un comentario que explica qué hace esa página.
 Los estilos propios de cada página van en `css/estilos.css`, **solo en el bloque con tu nombre** (al final del archivo).
 
 ## Estructura

@@ -14,14 +14,60 @@
   <!-- Header compartido: lo llena js/componentes.js -->
   <header id="header"></header>
 
-  <!-- ===== Contenido de la página — Responsable: Pedro ===== -->
+  <!-- ===== Contenido de la página — Responsable: Builler ===== -->
   <main class="contenedor" id="contenido">
     <h1>Administrar noticias</h1>
-    <p class="bajada">Crea una noticia nueva o elimina las existentes.</p>
-    <form id="form-noticia" novalidate>
-      <!-- Pendiente (Pedro): campos título, categoría, autor, resumen, cuerpo -->
-    </form>
-    <section id="tabla-noticias"></section>
+    <p class="bajada">Crea una noticia nueva o elimina las existentes. Los cambios se guardan en este navegador (localStorage).</p>
+
+    <div class="admin-grid">
+      <!-- Crear noticia (mini CRUD) -->
+      <form id="form-noticia" class="formulario" novalidate>
+        <h2 class="rotulo">Nueva noticia</h2>
+        <div class="grupo">
+          <label for="n-titulo">Título</label>
+          <input class="campo" id="n-titulo" maxlength="120">
+          <p class="mensaje-error" id="error-n-titulo"></p>
+        </div>
+        <div class="fila-2">
+          <div class="grupo">
+            <label for="n-categoria">Categoría</label>
+            <select class="campo" id="n-categoria">
+              <option value="">Seleccione...</option>
+              <option>Política</option><option>Economía</option><option>Mundo</option>
+              <option>Cultura</option><option>Deportes</option><option>Opinión</option><option>Ciudad</option>
+            </select>
+            <p class="mensaje-error" id="error-n-categoria"></p>
+          </div>
+          <div class="grupo">
+            <label for="n-autor">Autor</label>
+            <input class="campo" id="n-autor">
+            <p class="mensaje-error" id="error-n-autor"></p>
+          </div>
+        </div>
+        <div class="grupo">
+          <label for="n-resumen">Resumen</label>
+          <textarea class="campo" id="n-resumen" rows="2" maxlength="250"></textarea>
+          <p class="mensaje-error" id="error-n-resumen"></p>
+        </div>
+        <div class="grupo">
+          <label for="n-cuerpo">Cuerpo (separe los párrafos con una línea en blanco)</label>
+          <textarea class="campo" id="n-cuerpo" rows="6"></textarea>
+          <p class="mensaje-error" id="error-n-cuerpo"></p>
+        </div>
+        <label class="check"><input type="checkbox" id="n-destacada"> Mostrar en la portada</label>
+        <button class="btn" type="submit">Publicar noticia</button>
+        <p id="admin-mensaje" class="mensaje-exito" role="status"></p>
+      </form>
+
+      <!-- Listado para eliminar -->
+      <section>
+        <div class="admin-cabecera">
+          <h2 class="rotulo">Noticias publicadas (<span id="total-admin">0</span>)</h2>
+          <button class="btn btn--borde btn--peque" id="btn-restaurar" type="button">Restaurar originales</button>
+        </div>
+        <div id="tabla-noticias"></div>
+      </section>
+    </div>
   </main>
 
   <!-- Footer compartido: lo llena js/componentes.js -->

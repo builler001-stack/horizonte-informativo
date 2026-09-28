@@ -14,14 +14,47 @@
   <!-- Header compartido: lo llena js/componentes.js -->
   <header id="header"></header>
 
-  <!-- ===== Contenido de la página — Responsable: Estefanía ===== -->
+  <!-- ===== Contenido de la página — Responsable: Builler ===== -->
   <main class="contenedor" id="contenido">
-    <section id="destacada"><!-- Informe especial: lo llena home.js --></section>
-    <section id="destacadas-seccion"><!-- Tarjetas por sección: las llena home.js --></section>
-    <div class="en-construccion">
-      <p><strong>Pendiente (Estefanía):</strong> completar la portada según la Pantalla 01 del Figma:
-      "Lo más leído", cita destacada, bloque de boletín (id="boletin") y noticias por sección.</p>
+    <!-- Bloque superior: informe especial (izq.) + columna lateral (der.) -->
+    <div class="home-grid">
+      <section id="destacada" class="home-principal" aria-label="Informe especial"></section>
+
+      <aside class="home-lateral">
+        <section aria-labelledby="t-mas-leido">
+          <h2 id="t-mas-leido" class="rotulo">Lo más leído</h2>
+          <ol id="mas-leido" class="ranking"></ol>
+        </section>
+
+        <!-- Cita destacada del editorial (pull quote) -->
+        <blockquote class="cita-destacada">
+          <p>“Racionar el agua no es una política: es la factura de veinte años sin obras.”</p>
+          <footer>— Editorial, página 14</footer>
+        </blockquote>
+
+        <!-- Llamado a la acción: boletín -->
+        <section id="boletin" class="boletin" aria-labelledby="t-boletin">
+          <h2 id="t-boletin" class="rotulo">Boletín de la mañana</h2>
+          <p>La edición resumida, en su correo antes de las siete.</p>
+          <form id="form-boletin" class="boletin__form" novalidate>
+            <label for="correo-boletin" class="solo-lectores">Correo electrónico</label>
+            <input class="campo" type="email" id="correo-boletin" placeholder="correo@ejemplo.com">
+            <button class="btn" type="submit">Recibir</button>
+          </form>
+          <p id="boletin-mensaje" role="status"></p>
+        </section>
+      </aside>
     </div>
+
+    <!-- Noticias destacadas por sección (cards dinámicas) -->
+    <section aria-labelledby="t-secciones" class="home-secciones">
+      <h2 id="t-secciones" class="rotulo">Destacadas por sección</h2>
+      <div id="destacadas-seccion" class="grid-secciones"></div>
+      <div class="acciones-centro">
+        <a class="btn" href="noticias.html">Ver todas las noticias</a>
+        <a class="btn btn--borde" href="contacto.html">Escríbanos</a>
+      </div>
+    </section>
   </main>
 
   <!-- Footer compartido: lo llena js/componentes.js -->

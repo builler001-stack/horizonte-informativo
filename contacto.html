@@ -14,14 +14,59 @@
   <!-- Header compartido: lo llena js/componentes.js -->
   <header id="header"></header>
 
-  <!-- ===== Contenido de la página — Responsable: Pedro ===== -->
+  <!-- ===== Contenido de la página — Responsable: Builler ===== -->
   <main class="contenedor" id="contenido">
     <h1>Contacto</h1>
-    <p class="bajada">Escríbanos para enviar información, corregir un dato publicado o proponer un tema. Respondemos en menos de dos días hábiles.</p>
-    <form id="form-contacto" novalidate>
-      <!-- Pendiente (Pedro): campos Nombre, Correo, Asunto, Motivo, Mensaje según Pantalla 04 -->
-    </form>
-    <p id="confirmacion" class="mensaje-exito" role="status"></p>
+    <p class="bajada">Escríbanos para enviar información, corregir un dato publicado o proponer un tema. Leemos todo; respondemos en menos de dos días hábiles.</p>
+
+    <div class="contacto-grid">
+      <!-- Formulario con validaciones (js/contacto.js) -->
+      <form id="form-contacto" class="formulario" novalidate>
+        <div class="fila-2">
+          <div class="grupo">
+            <label for="nombre">Nombre</label>
+            <input class="campo" id="nombre" name="nombre" placeholder="Nombre y apellido">
+            <p class="mensaje-error" id="error-nombre"></p>
+          </div>
+          <div class="grupo">
+            <label for="correo">Correo</label>
+            <input class="campo" id="correo" name="correo" type="email" placeholder="correo@ejemplo.com">
+            <p class="mensaje-error" id="error-correo"></p>
+          </div>
+        </div>
+        <div class="grupo">
+          <label for="asunto">Asunto</label>
+          <input class="campo" id="asunto" name="asunto" placeholder="Corrección, denuncia, propuesta...">
+          <p class="mensaje-error" id="error-asunto"></p>
+        </div>
+        <fieldset class="grupo segmentado">
+          <legend>Motivo</legend>
+          <label><input type="radio" name="motivo" value="Redacción" checked><span>Redacción</span></label>
+          <label><input type="radio" name="motivo" value="Publicidad"><span>Publicidad</span></label>
+          <label><input type="radio" name="motivo" value="Suscripciones"><span>Suscripciones</span></label>
+        </fieldset>
+        <div class="grupo">
+          <label for="mensaje">Mensaje</label>
+          <textarea class="campo" id="mensaje" name="mensaje" rows="6" placeholder="Cuéntenos con el mayor detalle posible."></textarea>
+          <p class="mensaje-error" id="error-mensaje"></p>
+        </div>
+        <button class="btn" type="submit">Enviar mensaje</button>
+        <p class="nota">Sus datos solo se usan para responderle.</p>
+        <p id="confirmacion" class="mensaje-exito" role="status"></p>
+      </form>
+
+      <!-- Panel lateral con información de la redacción -->
+      <aside class="contacto-info">
+        <h2 class="rotulo">Redacción</h2>
+        <p>Calle 39 № 12-41, piso 4<br>Bogotá, Colombia<br>(601) 742 1180<br>redaccion@horizonteinformativo.co</p>
+        <h2 class="rotulo">Publicidad y suscripciones</h2>
+        <p>(601) 742 1195<br>comercial@horizonteinformativo.co<br>suscripciones@horizonteinformativo.co</p>
+        <h2 class="rotulo">Horario de atención</h2>
+        <p>Lunes a viernes, 8:00 a 18:00<br>Sábados, 9:00 a 13:00</p>
+        <img src="img/placeholder.svg" alt="Espacio para el mapa o la fachada de la sede" class="mapa">
+        <p class="nota">La sede queda a dos cuadras de la estación Calle 39.</p>
+      </aside>
+    </div>
   </main>
 
   <!-- Footer compartido: lo llena js/componentes.js -->

@@ -112,3 +112,8 @@ function crearTarjeta(n) {
       </div>
     </article>`;
 }
+
+/** Devuelve true si el texto tiene formato de correo (lo usan contacto y boletín) */
+function correoValido(correo) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(correo);
+}

@@ -14,13 +14,25 @@
   <!-- Header compartido: lo llena js/componentes.js -->
   <header id="header"></header>
 
-  <!-- ===== Contenido de la página — Responsable: Nicolás ===== -->
+  <!-- ===== Contenido de la página — Responsable: Builler ===== -->
   <main class="contenedor" id="contenido">
-    <h1>Noticias</h1>
+    <p class="rotulo">Sección</p>
+    <h1 id="titulo-listado">Noticias</h1>
     <p id="contador" class="bajada"></p>
-    <div id="filtros"><!-- Chips de categoría: los crea listado.js --></div>
+
+    <!-- Filtros por categoría (chips) y orden -->
+    <div class="barra-filtros">
+      <div id="filtros" class="chips" role="group" aria-label="Filtrar por categoría"></div>
+      <label class="orden">Ordenar por:
+        <select id="orden" class="campo campo--corto">
+          <option value="recientes">más recientes</option>
+          <option value="antiguas">más antiguas</option>
+        </select>
+      </label>
+    </div>
+
     <section id="lista-noticias" aria-live="polite"></section>
-    <nav id="paginacion" aria-label="Paginación"></nav>
+    <nav id="paginacion" class="paginacion" aria-label="Paginación"></nav>
   </main>
 
   <!-- Footer compartido: lo llena js/componentes.js -->
