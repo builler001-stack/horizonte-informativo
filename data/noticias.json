@@ -7,7 +7,7 @@
     "autor": "Valeria Restrepo",
     "fecha": "2026-09-14",
     "lecturaMin": 12,
-    "imagen": "img/placeholder.svg",
+    "imagen": "img/noticias/agua.svg",
     "pieFoto": "Tanques comunitarios en el barrio San Isidro, donde el agua llega tres días por semana.",
     "destacada": true,
     "cuerpo": [
@@ -16,11 +16,23 @@
       "La red que abastece a la sabana se diseñó para 1,2 millones de personas y hoy sirve a 2,9 millones. Tres de sus cuatro plantas superan los cuarenta años. El plan de reposición existe desde 2019 y lleva ejecutado un 22%, según la respuesta oficial a un derecho de petición de esta redacción.",
       "En San Isidro, el barrio donde el agua llega tres días por semana, las familias organizaron un turno propio: los tanques comunitarios se llenan de madrugada y se reparten por escalera. Es un sistema informal, gratuito y frágil, y ha funcionado sin interrupción durante veintitrés semanas."
     ],
-    "cita": { "texto": "Cada mes que pasa sin obra nueva nos cuesta un mes más de turnos.", "autor": "Hernán Duque, ingeniero del acueducto regional" },
+    "cita": {
+      "texto": "Cada mes que pasa sin obra nueva nos cuesta un mes más de turnos.",
+      "autor": "Hernán Duque, ingeniero del acueducto regional"
+    },
     "cifras": [
-      { "valor": "31%", "texto": "de capacidad en los embalses" },
-      { "valor": "11", "texto": "municipios con turnos activos" },
-      { "valor": "22%", "texto": "del plan de reposición ejecutado" }
+      {
+        "valor": "31%",
+        "texto": "de capacidad en los embalses"
+      },
+      {
+        "valor": "11",
+        "texto": "municipios con turnos activos"
+      },
+      {
+        "valor": "22%",
+        "texto": "del plan de reposición ejecutado"
+      }
     ]
   },
   {
@@ -31,9 +43,11 @@
     "autor": "Andrés Lozano",
     "fecha": "2026-09-14",
     "lecturaMin": 5,
-    "imagen": "img/placeholder.svg",
+    "imagen": "img/noticias/salario.svg",
     "destacada": true,
-    "cuerpo": ["Las centrales piden un ajuste de dos dígitos; los gremios ofrecen la mitad. La mesa se instala el jueves y tiene plazo hasta el 30 de diciembre."]
+    "cuerpo": [
+      "Las centrales piden un ajuste de dos dígitos; los gremios ofrecen la mitad. La mesa se instala el jueves y tiene plazo hasta el 30 de diciembre."
+    ]
   },
   {
     "id": 3,
@@ -43,9 +57,11 @@
     "autor": "Marcela Ruiz",
     "fecha": "2026-09-14",
     "lecturaMin": 4,
-    "imagen": "img/placeholder.svg",
+    "imagen": "img/noticias/consejo.svg",
     "destacada": false,
-    "cuerpo": ["La votación fue de 28 a 11. El subsidio cubre a los estratos 1 y 2, y deja fuera a los comercios que consumen más de 40 metros cúbicos."]
+    "cuerpo": [
+      "La votación fue de 28 a 11. El subsidio cubre a los estratos 1 y 2, y deja fuera a los comercios que consumen más de 40 metros cúbicos."
+    ]
   },
   {
     "id": 4,
@@ -55,9 +71,11 @@
     "autor": "Agencias",
     "fecha": "2026-09-13",
     "lecturaMin": 6,
-    "imagen": "img/placeholder.svg",
+    "imagen": "img/noticias/clima.svg",
     "destacada": false,
-    "cuerpo": ["Cuarenta y ocho horas de prórroga no bastaron. El texto final menciona el fondo, pero no fija cifras ni fecha de arranque."]
+    "cuerpo": [
+      "Cuarenta y ocho horas de prórroga no bastaron. El texto final menciona el fondo, pero no fija cifras ni fecha de arranque."
+    ]
   },
   {
     "id": 5,
@@ -67,9 +85,11 @@
     "autor": "Julia Paredes",
     "fecha": "2026-09-13",
     "lecturaMin": 4,
-    "imagen": "img/placeholder.svg",
+    "imagen": "img/noticias/libros.svg",
     "destacada": true,
-    "cuerpo": ["Serán once días, 340 editoriales y una sala dedicada a la traducción. La invitada de honor llega del Caribe por primera vez en la historia del certamen."]
+    "cuerpo": [
+      "Serán once días, 340 editoriales y una sala dedicada a la traducción. La invitada de honor llega del Caribe por primera vez en la historia del certamen."
+    ]
   },
   {
     "id": 6,
@@ -79,9 +99,11 @@
     "autor": "Iván Cortés",
     "fecha": "2026-09-13",
     "lecturaMin": 7,
-    "imagen": "img/placeholder.svg",
+    "imagen": "img/noticias/futbol.svg",
     "destacada": true,
-    "cuerpo": ["Después de nueve temporadas, el estadio municipal vuelve a llenarse. La crónica desde el vestuario y las cuentas del club, que sigue sin patrocinador."]
+    "cuerpo": [
+      "Después de nueve temporadas, el estadio municipal vuelve a llenarse. La crónica desde el vestuario y las cuentas del club, que sigue sin patrocinador."
+    ]
   },
   {
     "id": 7,
@@ -91,9 +113,11 @@
     "autor": "Valeria Restrepo",
     "fecha": "2026-09-12",
     "lecturaMin": 3,
-    "imagen": "img/placeholder.svg",
+    "imagen": "img/noticias/bus.svg",
     "destacada": false,
-    "cuerpo": ["El cambio afecta a 62.000 pasajeros diarios. El operador promete frecuencias de siete minutos en hora pico durante el primer mes."]
+    "cuerpo": [
+      "El cambio afecta a 62.000 pasajeros diarios. El operador promete frecuencias de siete minutos en hora pico durante el primer mes."
+    ]
   },
   {
     "id": 8,
@@ -103,8 +127,10 @@
     "autor": "Editorial",
     "fecha": "2026-09-14",
     "lecturaMin": 4,
-    "imagen": "img/placeholder.svg",
+    "imagen": "img/noticias/editorial.svg",
     "destacada": false,
-    "cuerpo": ["Racionar el agua no es una política: es la factura de veinte años sin obras."]
+    "cuerpo": [
+      "Racionar el agua no es una política: es la factura de veinte años sin obras."
+    ]
   }
 ]
