@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img"><title>Bus urbano con letreros de nuevas rutas</title>
+<rect width="1200" height="800" fill="#e9eef0"/>
+<g fill="#c7d1d6"><rect x="60" y="180" width="160" height="420"/><rect x="240" y="120" width="120" height="480"/><rect x="900" y="150" width="140" height="450"/><rect x="1060" y="220" width="110" height="380"/></g>
+<rect x="0" y="600" width="1200" height="200" fill="#4a5963"/><g fill="#f2c14e"><rect x="80" y="690" width="120" height="14"/><rect x="340" y="690" width="120" height="14"/><rect x="600" y="690" width="120" height="14"/><rect x="860" y="690" width="120" height="14"/></g>
+<rect x="260" y="330" width="640" height="270" rx="30" fill="#0e7fa6"/><rect x="260" y="540" width="640" height="30" fill="#0a6283"/>
+<g fill="#d9e8ee"><rect x="300" y="370" width="120" height="100" rx="10"/><rect x="440" y="370" width="120" height="100" rx="10"/><rect x="580" y="370" width="120" height="100" rx="10"/><rect x="720" y="370" width="140" height="150" rx="10"/></g>
+<rect x="300" y="300" width="180" height="50" rx="8" fill="#1f3b4d"/><text x="390" y="336" text-anchor="middle" font-family="Georgia,serif" font-size="34" font-weight="700" fill="#f2c14e">R-14</text>
+<g fill="#1f3b4d"><circle cx="380" cy="600" r="55"/><circle cx="780" cy="600" r="55"/></g><g fill="#c7d1d6"><circle cx="380" cy="600" r="22"/><circle cx="780" cy="600" r="22"/></g>
+<rect x="1000" y="360" width="16" height="240" fill="#1f3b4d"/><rect x="950" y="300" width="116" height="80" rx="10" fill="#c2185b"/>
+<text x="1008" y="352" text-anchor="middle" font-family="Georgia,serif" font-size="30" font-weight="700" fill="#ffffff">NUEVA</text></svg>

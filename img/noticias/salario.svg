@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img"><title>Monedas apiladas y gráfica de inflación en descenso</title>
+<rect width="1200" height="800" fill="#eef3f1"/>
+<g fill="#d7e4df"><rect x="150" y="520" width="90" height="180"/><rect x="270" y="440" width="90" height="260"/><rect x="390" y="360" width="90" height="340"/><rect x="510" y="300" width="90" height="400"/></g>
+<path d="M170 250 L320 330 L450 300 L600 470 L720 520" stroke="#c2185b" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M690 470 L740 530 L665 545Z" fill="#c2185b"/>
+<g fill="#e0a82e" stroke="#b07f14" stroke-width="5">
+<ellipse cx="880" cy="690" rx="120" ry="30"/><rect x="760" y="600" width="240" height="90"/><ellipse cx="880" cy="600" rx="120" ry="30"/>
+<rect x="760" y="520" width="240" height="80"/><ellipse cx="880" cy="520" rx="120" ry="30"/>
+<rect x="760" y="440" width="240" height="80"/><ellipse cx="880" cy="440" rx="120" ry="30"/></g>
+<text x="880" y="458" text-anchor="middle" font-family="Georgia,serif" font-size="56" font-weight="700" fill="#8a5e08">$</text>
+<rect x="100" y="700" width="1000" height="6" fill="#1f3b4d"/></svg>

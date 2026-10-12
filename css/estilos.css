@@ -120,6 +120,7 @@ main.contenedor { min-height: 60vh; padding-top: 32px; padding-bottom: 56px; }
 .cita-destacada p { font-style: italic; font-size: 1.5rem; line-height: 1.35; margin: 0 0 8px; }
 .cita-destacada footer { font-size: .85rem; color: var(--tinta-suave); }
 .grid-secciones { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
+.tarjeta-compacta img { aspect-ratio: 3 / 2; object-fit: cover; width: 100%; margin-bottom: 10px; background: var(--gris-claro); }
 .tarjeta-compacta h3 { font-size: 1.25rem; line-height: 1.25; margin: 4px 0 8px; }
 .tarjeta-compacta h3 a { text-decoration: none; }
 .tarjeta-compacta p { margin: 0 0 8px; font-size: .95rem; }

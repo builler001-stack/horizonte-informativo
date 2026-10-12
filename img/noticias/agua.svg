@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img"><title>Embalse con bajo nivel de agua y tanque comunitario</title>
+<rect width="1200" height="800" fill="#d9e8ee"/><circle cx="960" cy="170" r="80" fill="#f2c14e"/>
+<path d="M0 360 L220 250 L420 340 L640 220 L900 330 L1200 260 V800 H0Z" fill="#9fb8a6"/>
+<path d="M0 430 C300 400 900 400 1200 430 V800 H0Z" fill="#c9a97a"/>
+<path d="M260 560 C450 520 750 520 940 560 C750 600 450 600 260 560Z" fill="#4f93b3"/>
+<g stroke="#8a6b43" stroke-width="5" fill="none"><path d="M120 650 l60 30 l-20 50 l70 20"/><path d="M1000 640 l-50 40 l30 40 l-60 30"/><path d="M500 690 l40 -20 l30 40 l60 -10"/></g>
+<rect x="760" y="300" width="170" height="210" rx="14" fill="#1f3b4d"/><rect x="740" y="290" width="210" height="30" rx="8" fill="#2d5569"/>
+<rect x="785" y="340" width="120" height="16" rx="8" fill="#0e7fa6"/><rect x="785" y="380" width="80" height="16" rx="8" fill="#0e7fa6" opacity=".6"/>
+<path d="M930 440 h60 v30" stroke="#1f3b4d" stroke-width="16" fill="none"/><path d="M990 500 c-14 22 -14 36 0 40 c14 -4 14 -18 0 -40Z" fill="#0e7fa6"/>
+<rect x="780" y="510" width="16" height="60" fill="#1f3b4d"/><rect x="890" y="510" width="16" height="60" fill="#1f3b4d"/></svg>

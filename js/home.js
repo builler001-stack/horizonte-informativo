@@ -34,6 +34,9 @@ function pintarPorSeccion(noticias) {
 
   document.getElementById("destacadas-seccion").innerHTML = unaPorSeccion.map(n => `
     <article class="tarjeta-compacta">
+      <a href="detalle.html?id=${n.id}" tabindex="-1" aria-hidden="true">
+        <img src="${escaparHTML(n.imagen)}" alt="" loading="lazy">
+      </a>
       <span class="categoria">${escaparHTML(n.categoria)}</span>
       <h3><a href="detalle.html?id=${n.id}">${escaparHTML(n.titulo)}</a></h3>
       <p>${escaparHTML(n.resumen)}</p>

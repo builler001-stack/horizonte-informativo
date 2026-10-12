@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img"><title>Grifo sin agua sobre una factura</title>
+<rect width="1200" height="800" fill="#f3eee6"/>
+<g transform="rotate(-6 500 520)"><rect x="300" y="300" width="400" height="440" fill="#ffffff" stroke="#1f3b4d" stroke-width="5"/>
+<text x="330" y="360" font-family="Georgia,serif" font-size="36" font-weight="700" fill="#1f3b4d">FACTURA</text>
+<g stroke="#c9c2b5" stroke-width="10" stroke-linecap="round"><line x1="330" y1="410" x2="660" y2="410"/><line x1="330" y1="450" x2="600" y2="450"/><line x1="330" y1="490" x2="640" y2="490"/><line x1="330" y1="530" x2="560" y2="530"/></g>
+<line x1="330" y1="600" x2="670" y2="600" stroke="#1f3b4d" stroke-width="4"/>
+<text x="670" y="670" text-anchor="end" font-family="Georgia,serif" font-size="54" font-weight="700" fill="#c2185b">20 años</text></g>
+<rect x="760" y="120" width="60" height="200" fill="#8c9aa3"/><rect x="760" y="250" width="260" height="70" rx="20" fill="#a9b6bd"/>
+<rect x="960" y="320" width="60" height="50" fill="#8c9aa3"/><rect x="740" y="160" width="100" height="36" rx="10" fill="#6d7b83"/>
+<path d="M990 400 c-18 28 -18 46 0 50 c18 -4 18 -22 0 -50Z" fill="#0e7fa6" opacity=".35"/></svg>

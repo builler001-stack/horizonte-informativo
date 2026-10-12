@@ -40,6 +40,9 @@ function crearRelacionadas(n, todas) {
       <h2 id="t-rel" class="rotulo">También en esta edición</h2>
       <div class="grid-secciones">
         ${relacionadas.map(r => `<article class="tarjeta-compacta">
+          <a href="detalle.html?id=${r.id}" tabindex="-1" aria-hidden="true">
+            <img src="${escaparHTML(r.imagen)}" alt="" loading="lazy">
+          </a>
           <span class="categoria">${escaparHTML(r.categoria)}</span>
           <h3><a href="detalle.html?id=${r.id}">${escaparHTML(r.titulo)}</a></h3>
         </article>`).join("")}
