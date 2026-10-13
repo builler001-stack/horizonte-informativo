@@ -37,8 +37,20 @@ formContacto.addEventListener("submit", evento => {
     formContacto.querySelector(".campo--error").focus();
     return;
   }
-  const nombre = document.getElementById("nombre").value.trim().split(" ")[0];
+   const nombreCompleto = document.getElementById("nombre").value.trim();
+  const nombre = nombreCompleto.split(" ")[0];
   const motivo = formContacto.querySelector('input[name="motivo"]:checked').value;
+
+  guardarMensaje({
+    id: Date.now(),
+    fecha: new Date().toLocaleString("es-CO"),
+    nombre: nombreCompleto,
+    correo: document.getElementById("correo").value.trim(),
+    asunto: document.getElementById("asunto").value.trim(),
+    motivo,
+    mensaje: document.getElementById("mensaje").value.trim()
+  });
+
   confirmacion.textContent = `Gracias, ${nombre}. Recibimos su mensaje para ${motivo}; le responderemos en menos de dos días hábiles.`;
   formContacto.reset();
 });
